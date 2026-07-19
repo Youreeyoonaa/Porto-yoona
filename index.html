@@ -8,12 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
 </head>
 
 <body>
     <!-- judul -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container justify-content-between">
+        <div class="container justify-content-between sticky-top">
             <!-- Logo di kiri -->
             <a class="navbar-brand" href="#">
                 <img src="Img/byeolara_trans.png" alt="Byeolara Logo" width="150" height="80"
@@ -43,59 +46,78 @@
     <!-- end menu -->
 
     <!-- konten atas -->
-    <div class="konten p-5 text-black rounded text-center justify-content-center ">
+    <div class="konten p-4 my-3 rounded text-center justify-content-center ">
         <img src="Img/yoona.jpeg" class="rounded-circle img-thumbnail mb-3" alt="yoona">
         <h1>Hutagaol Yohana Abelia</h1>
         <p>Student of Software Engineering Technology | Focused on Web Development & UI Design</p>
         <a href="#projects" class="btn btn-gradient ms-4">Lihat Portofolio</a>
         <a href="#contact" class="btn btn-outline-light ms-2">Hubungi Saya</a>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ffffffff" fill-opacity="1"
-            d="M0,128L48,138.7C96,149,192,171,288,149.3C384,128,480,64,576,85.3C672,107,768,213,864,234.7C960,256,1056,192,1152,186.7C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-        </path>
-    </svg>
+
     <!-- end konten atas  -->
 
+    <!-- icon medsos -->
+    <div class="social-icons mb-4">
+        <!-- GitHub -->
+        <a href="https://github.com/Youreeyoonaa" target="_blank">
+            <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/princy_na?igsh=MWczdzgxOHVpNGpnaQ==" target="_blank">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+
+        <!-- X (Twitter) -->
+        <a href="https://x.com/Yoonaabelia" target="_blank">
+            <i class="fa-brands fa-x-twitter fa-2x"></i>
+        </a>
+    </div>
+
+    <!-- end icon medsos -->
+
     <!-- tentang saya -->
-    <div class="tentangsaya bg-light " style="width: fit-content;">
-        <h2 class="fw-bold text-center mb-0 bg-light"> ⋆. 𐙚˚࿔ Tentang Saya 𝜗𝜚˚⋆</h2>
-        <div class="card" style="max-width: none; border: none; transition: none; transform: none; border-radius: 0%;">
-            <div class="row g-0 mt-4">
-                <div class="col">
-                    <img src="Img/yoona.jpeg" class="img-fluid  img-thumbnail mb-2" style="width: 300rem;;"
-                        alt="logo Yoona">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body ">
-                        <h5 class="card-title  text-center"> <strong>Tentang Saya 𝜗ৎ</strong> </h5>
-                        <p>
-                            Halo, saya Yohana, mahasiswa Teknologi Rekayasa Perangkat Lunak yang tertarik mendalami
-                            <strong>UI Design</strong> dan pengembangan web. Saya sering menggunakan
-                            <strong>HTML dan CSS</strong> untuk mengerjakan berbagai tugas, seperti membuat website
-                            berita,
-                            website bisnis untuk kelas entrepreneur (Design Lab), serta login form sederhana.
-                        </p>
-                        <p>
-                            Selain itu, saya juga mencoba membuat website untuk menampilkan hasil karya saya seperti
-                            lukisan
-                            dan hobi lainnya. Saya tertarik belajar menggunakan <strong>Figma</strong> dan cukup
-                            mahir
-                            memakai
-                            <strong>Canva</strong> untuk desain antarmuka. Saat ini saya masih mempelajari dasar
-                            <strong>Java</strong> dan <strong>Python</strong>, serta menggunakan
-                            <strong>GitHub</strong>
-                            dan
-                            media sosial untuk membagikan project dasar yang saya kerjakan.
-                        </p>
-                        <p>
-                            Tujuan saya adalah terus mengembangkan kemampuan di bidang web development dan UI/UX
-                            design,
-                            sambil membangun portofolio karya yang bisa menjadi langkah awal menuju karier sebagai
-                            software
-                            engineer.
-                        </p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    <div class="tentangsaya">
+        <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+            <h2 class="fw-bold text-center mb-5"> ⋆. 𐙚˚࿔ Tentang Saya 𝜗𝜚˚⋆</h2>
+        </div>
+        <div class="container justify-content-center">
+            <div class="card my-3 text-center ms-4 ">
+                <div class="row g-0 p-3  ">
+                    <div class="col-md-4">
+                        <img src="Img/yoona.jpeg" class="img-fluid rounded-start" alt="yoona">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Tentang Saya 𝜗ৎ</strong></h5>
+                            <p>
+                                Halo, saya Yohana, mahasiswa Teknologi Rekayasa Perangkat Lunak yang tertarik mendalami
+                                <strong>UI Design</strong> dan pengembangan web. Saya sering menggunakan
+                                <strong>HTML dan CSS</strong> untuk mengerjakan berbagai tugas, seperti membuat website
+                                berita,
+                                website bisnis untuk kelas entrepreneur (Design Lab), serta login form sederhana.
+                            </p>
+                            <p>
+                                Selain itu, saya juga mencoba membuat website untuk menampilkan hasil karya saya seperti
+                                lukisan
+                                dan hobi lainnya. Saya tertarik belajar menggunakan <strong>Figma</strong> dan cukup
+                                mahir
+                                memakai
+                                <strong>Canva</strong> untuk desain antarmuka. Saat ini saya masih mempelajari dasar
+                                <strong>Java</strong> dan <strong>Python</strong>, serta menggunakan
+                                <strong>GitHub</strong>
+                                dan
+                                media sosial untuk membagikan project dasar yang saya kerjakan.
+                            </p>
+                            <p>
+                                Tujuan saya adalah terus mengembangkan kemampuan di bidang web development dan UI/UX
+                                design,
+                                sambil membangun portofolio karya yang bisa menjadi langkah awal menuju karier sebagai
+                                software
+                                engineer.
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,13 +127,11 @@
 
 
     <!-- skill/keahlian -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#ffff" fill-opacity="1"
-            d="M0,64L48,96C96,128,192,192,288,197.3C384,203,480,149,576,122.7C672,96,768,96,864,117.3C960,139,1056,181,1152,186.7C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-        </path>
-    </svg>
-    <div class="row">
-        <h2 class="fw-bold text-center my-2"> ⋆. 𐙚˚࿔ Skill/Keahlian 𝜗𝜚˚⋆</h2>
+    <div class="row p-5">
+
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
+            <h2 class="fw-bold text-center my-4"> ⋆. 𐙚˚࿔ Skill/Keahlian 𝜗𝜚˚⋆</h2>
+        </div>
 
         <div class="col-lg-4">
             <div class="card shadow-lg border-0 mt-5 mx-auto" style="width: 22rem;">
@@ -191,105 +211,234 @@
     <!-- end skill/ keahlian -->
 
 
-    <!-- Project -->
-    <section id="project">
+    <!-- project -->
+    <section id="project ">
 
-        <h2 class="fw-bold text-center my-5 "> ⋆. 𐙚˚࿔ PROJECT 𝜗𝜚˚⋆ </h2>
-        <div class="row g-4 mx-auto">
-            <div class="col-md-3">
-                <div class="card p-3 shadow text-center p-3 ms-3">
-                    <img src="Img/login form basic2.jpeg" alt="">
-                    <strong>Login Form App</strong>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 shadow text-center p-3">
-                    <img src="Img/login form basic 3.jpeg" alt="">
-                    <strong>Login Form App</strong>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 shadow text-center p-3">
-                    <img src="Img/login form basic.jpeg" alt="">
-                    <strong>Login Form App</strong>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 shadow text-center p-3 img-thumbnail ">
-                    <img src="Img/designlab web.jpeg" class="web justify-content-center rounded float-end">
-                    <strong>Website Design Lab</strong>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 shadow text-center p-3">
-                    <img src="Img/uml suka SePy.png" alt="">
-                    <strong>UML Diagram Pastel</strong>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 shadow text-center p-3">
-                    <img src="Img/ui suka sepy.png" alt="Mockup Suka SePy">
-                    <strong>Sistem Wisata Suka SePy</strong>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 shadow text-center p-3">
-                    <img src="Img/byeolara web.jpeg" alt="Mockup Suka SePy">
-                    <strong>Website Byeolara</strong>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 shadow text-center p-3">
-                    <img src="Img/web kpop.jpeg" alt="Mockup Suka SePy">
-                    <strong>Website K‑Pop News</strong>
-                </div>
-            </div>
+        <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200">
+            <h2 class="fw-bold text-center my-5 "> ⋆. 𐙚˚࿔ PROJECT 𝜗𝜚˚⋆ </h2>
         </div>
+
+        <div data-aos="fade-up" data-aos-duration="3000">
+
+            <div class="row g-2 ms-5 p-4 text-center justify-content-center">
+                <div class="col-md-3">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"><strong>PROJECT</strong></div>
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Byeolara Project</strong></h5>
+                            <div class="icon">
+                                <a href="https://github.com/Youreeyoonaa" target="_blank">
+                                    <i class="fa-brands fa-github fa-2x mb-4 my-2"></i>
+                                </a>
+                            </div>
+                            <p><small>Ini adalah salah satu web project saya <strong>BYEOLARA</strong> yang masih dalam
+                                    tahap
+                                    progres</small> </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"><strong>PROJECT</strong></div>
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Photostrip Project</strong></h5>
+                            <div class="icon">
+                                <a href="https://canva.link/an03r0wjrnmo5ak" target="_blank">
+                                    <i class="fa-solid fa-folder-open fa-2x mb-4 my-2"></i>
+                                </a>
+                            </div>
+                            <p><small>Project <strong>Template canva</strong> saya yang masih dalam tahap progres tetapi
+                                    sudah
+                                    bisa dipakai oleh semua orang</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"><strong>PROJECT</strong></div>
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Designlab Project</strong></h5>
+                            <div class="icon">
+                                <a href="https://youreeyoonaa.github.io/designlab/" target="_blank">
+                                    <i class="fa-brands fa-github fa-2x mb-4 my-2"></i>
+                                </a>
+                            </div>
+                            <p><small>ProjectWeb yang masih dalam tahap progres, ini adalah website untuk bisnis
+                                    entrepreneur
+                                    saya yaitu <strong>Designlab</strong> </small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header"><strong>PROJECT</strong></div>
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Figma Project</strong></h5>
+                            <div class="icon">
+                                <a href="https://www.figma.com/design/lzflbN3SNheIIUuJE0gWsE/Untitled?node-id=0-1&p=f&t=1wHnUyee167qAzca-0"
+                                    target="_blank">
+                                    <i class="fa-brands fa-figma fa-2x mb-4 my-2"></i>
+                                </a>
+                            </div>
+                            <p><small>Project Figma,membuat mockup tampilan website untuk bisnis
+                                    klien saya yaitu <strong>Wisata Suka SePy</strong> </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200">
+                <h4 class="fw-bold text-center "> ⋆. 𐙚˚࿔ PROJECT LAINNYA 𝜗𝜚˚⋆ </h4>
+            </div>
+
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="container p-5">
+
+                    <div class="row g-3 text-center justify-content-center">
+                        <div class="col-md-3">
+                            <div class="card p-2 shadow text-center ">
+                                <img src="Img/login form basic2.jpeg" alt="">
+                                <strong>Login Form App</strong>
+                                <P>🎨 html | css </P>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-2 shadow text-center ">
+                                <img src="Img/login form basic 3.jpeg" alt="">
+                                <strong>Login Form App</strong>
+                                <P>🎨 html | css </P>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-2 shadow text-center">
+                                <img src="Img/login form basic.jpeg" alt="">
+                                <strong>Login Form App</strong>
+                                <P>🎨 html | css </P>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-2 shadow text-center ">
+                                <img src="Img/designlab web.jpeg" class="web justify-content-center rounded float-end">
+                                <strong>Website Design Lab</strong>
+                                <P>🎨 html | css | bootstrap </P>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-5">
+                            <div class="card p-3 shadow text-center p-3">
+                                <img src="Img/uml suka SePy.png" alt="UML">
+                                <strong>UML Diagram Pastel</strong>
+                                <P>🎨 draw.io | canva </P>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-5">
+                            <div class="card p-3 shadow text-center p-3">
+                                <img src="Img/ui suka sepy.png" alt="Mockup Suka SePy">
+                                <strong>Sistem Wisata Suka SePy</strong>
+                                <P>🎨 html | css |</P>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-5">
+                            <div class="card p-3 shadow text-center p-3">
+                                <img class="web ms-5" src="Img/poster.jpeg" alt="Poster" width="175px">
+                                <strong>Poster Digital</strong>
+                                <P>🎨 alat gambar | gemini </P>
+                            </div>
+                        </div>
+                        <div class="col-md-3 my-5">
+                            <div class="card p-3 shadow text-center p-3">
+                                <img class="web ms-4" src="Img/web kpop.jpeg" alt="Kpop News" width="195px">
+                                <strong>Website K‑Pop News</strong>
+                                <P>🎨 html | css </P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- end project -->
 
-    <!-- grid konten tengah -->
-    <div class="gambar p-5">
-        <div class="row text-center">
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="gambar/ikon1.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Karya 1</h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <a href="#" class="btn btn-primary">Detail</a>
+
+    <!-- kontak  -->
+    <div class="row p-5 ">
+
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600">
+            <h2 class="fw-bold text-center "> ⋆. 𐙚˚࿔ Kontak 𝜗𝜚˚⋆</h2>
+        </div>
+
+
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+            <div class="kontak p-5 bg-light p-2 text-dark bg-opacity-50 my-5 ">
+                <div class="info ">
+                    <div class="card mb-3" style="max-width: 50rem; height: 390px;">
+                        <div class="card-header"><strong>Hubungi Saya </strong></div>
+                        <div class="card-body">
+                            <h5 class="card-title"> <strong>Let’s Connect! 🚀</strong></h5>
+                            <p class="card-text"> Lagi nyari partner buat project seru, atau sekadar mau ngobrol soal
+                                desain, coding, atau K‑Pop? Feel free buat reach out ke aku. Aku suka banget explore ide
+                                baru bareng orang lain, jadi jangan ragu buat drop pesan yaa 💌</p>
+
+                            <h6>📧 Email: hutagaolyohanaabelia@gmail.com</h6>
+                            <h6>📍 Lokasi: Medan, Sumatera Utara</h6>
+                            <h6>💻 GitHub: Youreeyoonaa</h6>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="gambar/ikon2.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Karya 2</h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <a href="#" class="btn btn-primary">Detail</a>
+                <div class="input ms-3 " style="width: 50rem; ">
+                    <div class="form-floating mb-3">
+                        <input type="Name" class="form-control" id="floatingInput" placeholder="text">
+                        <label for="floatingInput">Name</label>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="gambar/ikon4.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Karya 3</h5>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <a href="#" class="btn btn-primary">Detail</a>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
                     </div>
+                    <div class="form-floating">
+                        <input type="Subject" class="form-control" id="floatingPassword" placeholder="text">
+                        <label for="floatingPassword">Subject</label>
+                    </div>
+                    <div class="form-floating my-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                    <div class="d-grid ms-5">
+                        <button class="button btn-gradient ms-5" type="button"><strong>🚀 Kirim vibes
+                                kamu!</strong></button>
+                    </div>
+
                 </div>
             </div>
         </div>
+
+    </div>
+    <!-- end kontak -->
+    <hr>
+    <!-- footer -->
+    <div class="footer  justify-content-center text-center bg-light-opacity-50">
+        <p>© Yoonaa 2026 Design & Code Journey. Dibuat dengan ❤️ dan sedikit insomnia 😅</p>
+        <p>Follow the vibes →
+            <a href="https://www.instagram.com/princy_na?igsh=MWczdzgxOHVpNGpnaQ=="><strong>Instagram</strong></a> |
+            <a href="https://github.com/Youreeyoonaa"><strong>GitHub</strong></a> |
+            <a href="https://x.com/Yoonaabelia"><strong>Twitter</strong></a>
+        </p>
     </div>
 
-
+    <!-- end footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

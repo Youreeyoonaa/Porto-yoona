@@ -1,5 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* mencegah scroll horizontal */
+}
+
 body {
-    /* background-color: #ffc0cb; */
       background: linear-gradient(90deg, #e6e6fa, #ffc0cb, #fffacd);
 }
 
@@ -48,6 +58,24 @@ body {
     width: 150px;
 }
 
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #333; /* warna default ikon */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px); /* naik saat hover */
+  color: #ff01c4; /* ganti warna saat hover */
+}
+
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 15px;
@@ -71,4 +99,39 @@ body {
 .list-group-item:hover {
   background: #f8f9fa;
 }
+
+.icon {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon a {
+  color: #333; /* warna default ikon */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon a:hover {
+  transform: translateY(-5px); /* naik saat hover */
+  color: #ff01c4; /* ganti warna saat hover */
+}
+
+.kontak {
+  display: flex;
+  border-radius: 20px;
+
+}
+
+.button {
+  height: 50px;
+  width: 500px;
+  background: linear-gradient(90deg, #ff9eb5, #c79bff, #ffe27a);
+  color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+  /* transition: 0.3s; */
+  border: none;
+}
+
 
