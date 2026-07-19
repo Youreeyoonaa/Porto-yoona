@@ -6,7 +6,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* mencegah scroll horizontal */
+  /* overflow-x: hidden; mencegah scroll horizontal */
 }
 
 body {
@@ -17,9 +17,6 @@ body {
   /* background: linear-gradient(90deg, #e6e6fa, #ffc0cb, #fffacd); */
   background: linear-gradient(135deg, #ff9eb54d, #c79bff, #ffe27a);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.308);
-  position: sticky;
-  top: 0;
-  z-index: 9999;
 }
 
 .navbar-brand img {
@@ -117,20 +114,17 @@ body {
   color: #ff01c4; /* ganti warna saat hover */
 }
 
-.kontak {
-  display: flex;
-  border-radius: 20px;
-
+.bg-light {
+  background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
+
 .button {
-  height: 50px;
-  width: 500px;
   background: linear-gradient(90deg, #ff9eb5, #c79bff, #ffe27a);
   color: #fff;
   border-radius: 25px;
   font-weight: bold;
-  /* transition: 0.3s; */
+  transition: 0.3s;
   border: none;
 }
 
