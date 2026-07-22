@@ -39,7 +39,8 @@ body {
 }
 
 .btn-gradient {
-  background: linear-gradient(90deg, #ff9eb5, #c79bff, #ffe27a);
+  /* background: linear-gradient(90deg, #ff9eb5, #c79bff, #ffe27a); */
+  background-color: #5c4b51;
   color: #fff;
   border-radius: 25px;
   font-weight: bold;
@@ -48,7 +49,10 @@ body {
 
 .btn-gradient:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(255, 158, 181, 0.6);
+  /* box-shadow: 5px 5px 8px  rgba(255, 158, 181, 0.6); */
+  background-color: #fe3ba94f;
+  box-shadow: 5px 5px 8px  rgba(167, 57, 83, 0.6);
+
 }
 
 .konten img {
