@@ -11,6 +11,7 @@ html, body {
 
 body {
       background: linear-gradient(90deg, #e6e6fa, #ffc0cb, #fffacd);
+      /* background-color: #FAFFC4; */
 }
 
 .navbar {
@@ -40,7 +41,7 @@ body {
 
 .btn-gradient {
   /* background: linear-gradient(90deg, #ff9eb5, #c79bff, #ffe27a); */
-  background-color: #5c4b51;
+  background-color: #333;
   color: #fff;
   border-radius: 25px;
   font-weight: bold;
@@ -76,9 +77,17 @@ body {
   color: #ff01c4; /* ganti warna saat hover */
 }
 
+.aboutme {
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Poppins', 'Press Start 2P', sans-serif;;
+  font-size: large;
+  line-height: 1.5;
+}
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 15px;
+
 }
 
 .card:hover {
